@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApiWars</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <h1>Star Wars</h1>
+        </div>
+
+            <ul class="meniu">
+                <li><a href="{{ url_for('index')}}">Home</a> </li>
+               <li><a href="{{ url_for('login')}}">Login</a> </li>
+               <li><a href="{{ url_for('register')}}"> Register</a></li>
+            </ul>
+        <!-- </div> -->
+    </nav>
+
+
+<div class="container">
+   <h1>Star Wars univers planets</h1>
+
+    <div class="btn">
+        <button type="button" id="previous">Previous</button>
+        <button type="button" id="next">Next</button>
+    </div>
+
+    <div class="content">
+ 
+        <table class="table table-strip">
+            <table>
+                <thead>
+                    <tr>
+                    <th>Name</th>
+                    <th>Diameter</th>
+                    <th>Climate</th>
+                    <th>Terrain</th>
+                    <th>Surface Water Percentage</th>
+                    <th>Population</th>
+                    <th>Residents</th>
+                </tr>
+            </thead>
+
+        <tbody id="planets"></tbody>
+
+        </table>     
+    
+    
+        <div class="modal-container" id="modal_container">
+                <table class="table2">
+                    <thead>
+                        <tr>
+                        <th>Name</th>
+                        <th>Height</th>
+                        <th>Mass</th>
+                        <th>Hair colour</th>
+                        <th>Skin colour</th>
+                        <th>Eye colour</th>
+                        <th>Birth year</th>
+                        <th>Gender</th>
+                    </tr>
+                    </thead>
+                    <tbody id="residents">
+                    
+                    </tbody>
+                </table>
+            <button id="close">Close</button>
+        </div>
+        
+       
+
+    </div>
+    
+
+</div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>
